@@ -6,7 +6,7 @@ export const Container = styled.div`
     height: 100%;
     color: ${colors.darkSmoke};
     
-    @media (max-width: 375px) {
+    @media (max-width: 620px) {
         width: 116%;
     }
 `;
@@ -15,7 +15,7 @@ export const MainSection = styled.main`
     flex: 1;
     padding: 40px 113px;
 
-    @media (max-width: 375px) {
+    @media (max-width: 620px) {
         padding: 24px;
         display: flex;
         flex-direction: column;
@@ -23,7 +23,7 @@ export const MainSection = styled.main`
     }
 
     h1 {
-        @media (max-width: 375px) {
+        @media (max-width: 620px) {
        font-size: 24px;
     }
     }
@@ -33,7 +33,7 @@ export const ContainerInput = styled.div`
     margin-top: 16px;
     margin-bottom: 40px;
 
-    @media (max-width: 375px) {
+    @media (max-width: 620px) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -58,7 +58,7 @@ export const ContainerInput = styled.div`
         color: ${colors.smoke};
         border-radius: 4px;
 
-        @media (max-width: 375px) {
+        @media (max-width: 620px) {
         max-width: 100%;
         }
 

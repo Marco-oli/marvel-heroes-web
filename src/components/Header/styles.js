@@ -21,7 +21,7 @@ export const Text = styled.h3`
     color: ${colors.darkSmoke};
     font-weight: bold;
 
-    @media (max-width: 375px) {
+    @media (max-width: 620px) {
         flex-direction: column;
         align-items: center;
     }
