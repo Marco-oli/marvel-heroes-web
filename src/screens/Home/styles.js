@@ -5,17 +5,40 @@ export const Container = styled.div`
     width: 100%;
     height: 100%;
     color: ${colors.darkSmoke};
-    position: relative;
+    
+    @media (max-width: 375px) {
+        width: 116%;
+    }
 `;
 
 export const MainSection = styled.main`
     flex: 1;
     padding: 40px 113px;
+
+    @media (max-width: 375px) {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        @media (max-width: 375px) {
+       font-size: 24px;
+    }
+    }
 `;
 
 export const ContainerInput = styled.div`
     margin-top: 16px;
     margin-bottom: 40px;
+
+    @media (max-width: 375px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 
     h3 {
         margin-bottom: 8px;
@@ -34,6 +57,10 @@ export const ContainerInput = styled.div`
         padding: 8px 16px;
         color: ${colors.smoke};
         border-radius: 4px;
+
+        @media (max-width: 375px) {
+        max-width: 100%;
+        }
 
         input {
             border: none;

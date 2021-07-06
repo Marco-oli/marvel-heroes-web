@@ -10,7 +10,7 @@ function Header() {
         <S.Text>
           Nome do candidato:
           {' '}
-          <p>Marco Auréllio de Oliveira Pereira</p>
+          <p>Marco Auréllio de Oliveira</p>
         </S.Text>
       </S.ContainerText>
 

@@ -12,13 +12,19 @@ export const Container = styled.div`
     padding: 0 24px;
 `;
 
-export const ContainerText = styled.div``;
+export const ContainerText = styled.div`
+`;
 
 export const Text = styled.h3`
     display: flex;
     font-size: 14px;
     color: ${colors.darkSmoke};
     font-weight: bold;
+
+    @media (max-width: 375px) {
+        flex-direction: column;
+        align-items: center;
+    }
 
     p {
         margin-left: 5px;
