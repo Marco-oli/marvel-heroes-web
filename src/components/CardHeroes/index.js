@@ -1,21 +1,24 @@
 import React from 'react';
 import * as S from './styles';
 
-function CardHeroes() {
+function CardHeroes({
+  name, img, series, events,
+}) {
   return (
-    <>
-      <S.ContainerTitle>
-        <p>Personagem</p>
-        <p>Séries</p>
-        <p>Eventos</p>
-      </S.ContainerTitle>
-      <S.ContainerContent>
+    <S.ContainerContent>
+      <div className="imageCard">
+        <img src={img} />
+        <h2>{name}</h2>
+      </div>
 
-        <img src="#" alt="HeroImage" />
+      <div className="seriesOrEvents">
+        {series && series.map((item, index) => <p key={index.toString()}>{item}</p>)}
+      </div>
 
-        <h2>Abner....</h2>
-      </S.ContainerContent>
-    </>
+      <div className="seriesOrEvents">
+        {events && events.map((item, index) => <p key={index.toString()}>{item}</p>)}
+      </div>
+    </S.ContainerContent>
   );
 }
 
